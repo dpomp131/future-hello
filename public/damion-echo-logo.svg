@@ -1,0 +1,26 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00E5FF;" />
+      <stop offset="100%" style="stop-color:#BF00FF;" />
+    </linearGradient>
+    <filter id="gentleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="13" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(-38, 0)">
+    <path
+      d="M 450,250 C 750,300,750,724,450,774 M 250,512 H 450 M 250,350 H 400 M 250,674 H 400 M 525,200 C 825,250,825,774,525,824"
+      fill="none"
+      stroke="url(#neonGradient)"
+      stroke-width="24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#gentleGlow)"
+    />
+  </g>
+</svg>
